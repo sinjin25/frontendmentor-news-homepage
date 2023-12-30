@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+    <title>Frontend Mentor | News homepage</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&family=Noto+Sans+JP:wght@300&family=Nunito:wght@300;600;700&family=Rubik:ital,wght@0,300;0,400;0,500;1,400&display=swap"
+        rel="stylesheet">
+    <link href="/reset.css" rel="stylesheet">
+    <link href="/z-news-homepage/index.css" rel="stylesheet" />
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+        .attribution {
+            font-size: 11px;
+            text-align: center;
+        }
+
+        .attribution a {
+            color: hsl(228, 45%, 44%);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="template">
+        <section id="menu-overlay" class="menu d-none">
+            <div id="menu-body" class="menu-body">
+                <div id="menu-exit" class="menu-close">
+                    <img src="z-news-homepage/assets/images/icon-menu-close.svg" alt="">
+                </div>
+                <div class="menu-list d-flex fd-c gap-24">
+                    <a class="menu-link" href="#">Home</a>
+                    <a class="menu-link" href="#">New</a>
+                    <a class="menu-link" href="#">Popular</a>
+                    <a class="menu-link" href="#">Trending</a>
+                    <a class="menu-link" href="#">Categories</a>
+                </div>
+            </div>
+        </section>
+        <section class="logo d-flex jc-sb ai-c">
+
+            <div class="menu-logo">
+                <img src="/z-news-homepage/assets/images/logo.svg" alt="">
+            </div>
+            <div class="menu-bar d-lg-none" id="menu-bar">
+                <img src="z-news-homepage/assets/images/icon-menu.svg" alt="">
+            </div>
+            <div class="menu-nav d-none d-lg-flex fd-lg-r gap-40">
+                <a class="menu-link" href="#">Home</a>
+                <a class="menu-link" href="#">New</a>
+                <a class="menu-link" href="#">Popular</a>
+                <a class="menu-link" href="#">Trending</a>
+                <a class="menu-link" href="#">Categories</a>
+            </div>
+        </section>
+        <section class="hero d-flex fd-c fd-lg-r">
+            <!-- main -->
+            <section class="main">
+                <div class="main-picture">
+                    <img src="/z-news-homepage/assets/images/image-web-3-mobile.jpg" alt="">
+                </div>
+                <div class="d-flex fd-c gap-20 gap-lg-30 fd-lg-r">
+                    <div class="main-header heading-l heading-lg-xl">The Bright Future of Web 3.0?</div>
+                    <section>
+                        <div class="main-body">We dive into the next evolution of the web that claims to put the power
+                            of
+                            the
+                            platforms back into the hands of
+                            the
+                            people.
+                            But is it really fulfilling its promise?</div>
+                        <div class="main-button d-flex ai-c jc-c">Read more</div>
+                    </section>
+                </div>
+
+
+            </section>
+            <!-- new -->
+            <section class="news">
+                <div class="news-heading heading-m heading-lg-l">New</div>
+                <div class="news-section">
+                    <div class="news-body-header heading-s">Hydrogen VS Electric Cars</div>
+                    <div class="news-body --border">Will hydrogen-fueled cars ever catch up to EVs?</div>
+                </div>
+                <div class="news-section">
+                    <div class="news-body-header heading-s">The Downsides of AI Artistry</div>
+                    <div class="news-body --border">What are the possible adverse effects of on-demand AI image
+                        generation?</div>
+                </div>
+                <div class="news-section">
+                    <div class="news-body-header heading-s">Is VC Funding Drying Up?</div>
+                    <div class="news-body">Private funding by VC firms is down 50% YOY. We take a look at what
+                        that
+                        means.</div>
+                </div>
+            </section>
+        </section>
+        <section class="articles d-flex fd-c fd-lg-r gap-lg-30">
+            <div class="articles-section d-flex gap-24">
+                <div class="articles-image">
+                    <img src="z-news-homepage/assets/images/image-retro-pcs.jpg" alt="">
+                </div>
+                <section class="articles-body">
+                    <div class="articles-number heading-m">01</div>
+                    <div class="articles-header heading-xs">Reviving Retro PCs</div>
+                    <div class="articles-text">What happens when old PCs are given modern upgrades?</div>
+                </section>
+            </div>
+            <div class="articles-section d-flex gap-24">
+                <div class="articles-image"><img src="z-news-homepage/assets/images/image-top-laptops.jpg" alt=""></div>
+                <section class="articles-body">
+                    <div class="articles-number heading-m">02</div>
+                    <div class="articles-header heading-xs">Top 10 Laptops of 2022</div>
+                    <div class="articles-text">Our best picks for various needs and budgets.</div>
+                </section>
+            </div>
+            <div class="articles-section d-flex gap-24">
+                <div class="articles-image"><img src="z-news-homepage/assets/images/image-gaming-growth.jpg" alt="">
+                </div>
+                <section class="articles-body">
+                    <div class="articles-number heading-m">03</div>
+                    <div class="articles-header heading-xs">The Growth of Gaming</div>
+                    <div class="articles-text">How the pandemic has sparked fresh opportunities.</div>
+                </section>
+            </div>
+        </section>
+        <div class="attribution">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+            Coded by <a href="#">Raionus</a>.
+        </div>
+    </div>
+
+    <script>
+        const menuBarId = 'menu-bar'
+        const menuOverlayId = 'menu-overlay'
+        const menuOverlayExit = 'menu-exit'
+        const menuBody = 'menu-body'
+
+        const menuBarNode = document.getElementById(menuBarId)
+        const menuOverlayNode = document.getElementById(menuOverlayId)
+        const menuOverlayExitNode = document.getElementById(menuOverlayExit)
+        const menuBodyNode = document.getElementById(menuBody)
+
+        if (menuBarNode) {
+            menuBarNode.addEventListener('click', () => {
+                console.log('NOOT NOOT DATS THA SOUND O DA POLIS')
+                // open the menu
+                if (menuOverlayNode) {
+                    menuOverlayNode.classList.remove('d-none')
+                }
+            })
+        }
+
+        if (menuOverlayExitNode) {
+            menuOverlayExitNode.addEventListener('click', (e) => {
+                if (menuOverlayNode) {
+                    menuOverlayNode.classList.add('d-none')
+                }
+                e.stopPropagation()
+            })
+        }
+        if (menuOverlayNode && menuBodyNode) {
+            menuOverlayNode.addEventListener('click', () => {
+                if (menuOverlayNode) {
+                    menuOverlayNode.classList.add('d-none')
+                }
+            })
+            menuBodyNode.addEventListener('click', (e) => {
+                e.stopPropagation()
+            })
+        }
+    </script>
+</body>
+
+</html>
